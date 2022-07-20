@@ -13,7 +13,7 @@ export const getCharacterById = async (characterId) => {
     `${baseURL}/characters/${characterId}${urlAuth}`
   );
   const { data } = await response.json();
-  return data; 
+  return data;
 };
 
 export const getCharactersBySearch = async (query, limit = '20') => {

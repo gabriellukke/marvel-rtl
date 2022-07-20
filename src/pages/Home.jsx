@@ -13,15 +13,6 @@ class Home extends React.Component {
     };
   }
 
-  componentDidMount() {
-    // this.setAllCharacters();
-  }
-
-  /* setAllCharacters = async () => {
-    const allCharacters = await getAllCharacters();
-    this.setState({ characters: allCharacters.results });
-  }; */
-
   searchCharacters = async () => {
     const { search } = this.state;
     const allCharacters = await getCharactersBySearch(search);
