@@ -8,7 +8,7 @@ class CharacterCard extends React.Component {
       <div className="character-card">
         <img
           src={ `${thumbnail.path}/standard_fantastic.${thumbnail.extension}	` }
-          alt="hero"
+          alt="character"
         />
         <div className="card-container">
           <h4>{name}</h4>

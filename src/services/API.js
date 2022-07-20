@@ -10,7 +10,7 @@ export const getAllCharacters = async (limit = '20') => {
 
 export const getCharacterById = async (characterId) => {
   const response = await fetch(
-    `${baseURL}/characters/${characterId}${urlAuth}`
+    `${baseURL}/characters/${characterId}?${urlAuth}`
   );
   const { data } = await response.json();
   return data;
