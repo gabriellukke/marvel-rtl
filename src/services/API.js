@@ -16,9 +16,9 @@ export const getCharacterById = async (characterId) => {
   return data; 
 };
 
-export const getCharactersBySearch = async (query) => {
+export const getCharactersBySearch = async (query, limit = '20') => {
   const response = await fetch(
-    `${baseURL}/characters?nameStartsWith=${query}${urlAuth}&limit=${limit.toString()}`
+    `${baseURL}/characters?nameStartsWith=${query}&${urlAuth}&limit=${limit.toString()}`
   );
   const { data } = await response.json();
   return data; 
