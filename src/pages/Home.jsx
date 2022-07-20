@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroCard from '../components/HeroCard';
+import CharacterCard from '../components/CharacterCard';
 import { getAllCharacters } from '../services/API';
 
 class Home extends React.Component {
@@ -23,11 +23,19 @@ class Home extends React.Component {
   render() {
     const { allCharacters } = this.state;
     return (
-      <div>
-        {!!allCharacters.length && allCharacters.map((character) => (
-          <HeroCard key={ character.id } name={ character.name } />
-        ))}
-      </div>
+      <main className="container">
+        <div className="cards-list">
+          {!!allCharacters.length &&
+            allCharacters.map((character) => (
+              <CharacterCard
+                key={ character.id }
+                name={ character.name }
+                thumbnail={ character.thumbnail }
+                id={ character.id }
+              />
+            ))}
+        </div>
+      </main>
     );
   }
 }

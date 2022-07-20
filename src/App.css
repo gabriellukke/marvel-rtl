@@ -1,3 +1,38 @@
 .App {
   text-align: center;
 }
+
+header {
+  background-color: rgb(226, 54, 54);
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.cards-list {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  width: 80vw;
+}
+
+.character-card {
+  background-color: rgb(80, 74, 74);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(226, 54, 54, 0.5);
+  margin: 5px 12px;
+  padding: 5px 15px;
+}
+
+.character-card:hover {
+  box-shadow: 0 8px 16px 0 rgb(226, 54, 54);
+}
+
+.card-container {
+  padding: 2px 16px;
+}
