@@ -7,7 +7,7 @@ class CharacterCard extends React.Component {
     return (
       <div className="character-card">
         <img
-          src={ `${thumbnail.path}/standard_fantastic.${thumbnail.extension}	` }
+          src={ `${thumbnail.path}/standard_fantastic.${thumbnail.extension}` }
           alt="character"
         />
         <div className="card-container">
